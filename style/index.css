@@ -72,5 +72,68 @@ section h1{
 aside{
     grid-column: 2;
     width: 100%;
+    background-color: rgb(196, 196, 161);
+}
+button[type="menu"]{
+    background-color: purple;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+button a{
+    color: #d9f5dd;
+    text-decoration: none;
+    text-decoration-line: none;
+    width: 100%;
+    height: 100%;
+}
+
+.formulario-box{
+    background-color: #1f1e1e;
+    display: flex;
+}
+.formulario-box .formulario{
     
+    width: 550px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.formulario-box .formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px 20px;
+    background-color: #a7a4a4;
+    border-radius: 20px;
+    border: none;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+label, textarea, input{
+    padding: 5px;
+    border-radius: 10px;
+}
+input, textarea {
+    background-color: #333;
+}
+
+button[type="submit"]{
+    background-color: rgb(207, 3, 207);
+    width: 70%;
+    padding: 5px;
+    color: #d9f5dd;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    margin-top: 15px;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid black;
 }
