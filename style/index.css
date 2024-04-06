@@ -1,139 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 
-body{
-    background-color: beige;
-}
 header{
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    width: 100vw;
+}
+
+header nav{
+    width: 100vw;
+    margin: auto;
+    height: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: end;
-}
-header a{
-    text-decoration: none;
-    text-decoration-line: none;
-    color: #fff;
-    padding: 1rem;
-}
-header a:hover{
-    color: #d9f5dd;
-}
-main{
-    display: grid;
-    grid-template-columns: 820px auto;
-    
-    
-}
-.part1{
-    display: grid;
-    grid-template-columns: 25px 420px 150px;
-    grid-template-rows: 320px 250px 25px;
-}
-.divisao{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    border-radius:0 1rem 1rem 0;
-    grid-row: 1/4;
-}
-.profile-box{
-    display: flex;
-    flex-direction: column-reverse;
+    gap: 20px;
+    background-color: #426B69;
+    justify-content: center;
     align-items: center;
-    grid-row: 1;
-    
-    
 }
-.profile {
-    width: 200px;
-}
-section h1{
-    text-align: center;
-    
-}
-.bio{
-    display: flex;
-    grid-column: 2;
-    padding: 20px;
-}
-.bio h2{
-    text-align: left;
-    padding-right: 20px;
-}
-aside{
-    grid-column: 2;
-    width: 100%;
-    background-color: rgb(196, 196, 161);
-}
-button[type="menu"]{
-    background-color: purple;
-    width: 100%;
-    height: 30px;
-    border: none;
-}
-button a{
-    color: #d9f5dd;
+nav a{
     text-decoration: none;
-    text-decoration-line: none;
-    width: 100%;
-    height: 100%;
+    color: #B5CA8D;
 }
+nav a:hover{
+    color: #8BB174;
+    cursor: pointer;
 
-.formulario-box{
-    background-color: #1f1e1e;
-    display: flex;
 }
-.formulario-box .formulario{
-    
-    width: 550px;
-    align-items: center;
-    justify-items: center;
+.social-media i{
+    margin-right: 10px;
+}
+.bg{
+    width: 100vw;
     margin: auto;
-    margin-top: 55px;
-}
 
-.formulario-box .formulario form{
-    display: flex;
-    flex-direction: column;
-    padding: 35px 20px 20px;
-    background-color: #a7a4a4;
-    border-radius: 20px;
-    border: none;
 }
-fieldset{
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
-label, textarea, input{
-    padding: 5px;
+.hero h1{
+    font-size: 70px;
+    color: #222E50;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    border-bottom: 5px solid #426B69 ;
     border-radius: 10px;
 }
-input, textarea {
-    background-color: #333;
+.hero p{
+    position: absolute;
+    top: 320px;
+    left: 56px;
+    font-size: 18px;
+    
+}
+.hero p span{
+    font-weight: lighter;
+    color: #eaece7;
+    background-color: black;
+    font-style: italic;
+    
 }
 
-button[type="submit"]{
-    background-color: rgb(207, 3, 207);
-    width: 70%;
-    padding: 5px;
-    color: #d9f5dd;
+.conhecimentos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
     margin: auto;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.171);
-    margin-top: 15px;
-}
-
-footer{
+    width: 400px;
+    flex-direction: column;
     text-align: center;
-    border-top: 1px solid black;
+    color: #222E50;
+}
+.conhecimentos p{
+    text-align: left;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.heading{
+    grid-column: 1/3;
+}
+.conhecimentos div{
+    margin-bottom: 20px;
+}
+.img{
+    width: 1px;
+}
+.img img{
+    width: 80px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+ul img{
+    width: 25px;
+    
+}
+.timeline{
+    flex-direction: column;
+    padding: 40px;
+    margin: auto;
+    width: 500px;
+    flex-direction: column;
+    text-align: center;
+    color: #222E50;
+}
+.ano{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.timeline img{
+    width: 50px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #8BB174;
+    width: 100vw;
+    height: 75px;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
 }
