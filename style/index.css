@@ -122,6 +122,22 @@ ul img{
 .timeline img{
     width: 50px;
 }
+.musgo{
+    background-color: none;
+    border: none;
+    cursor:pointer;
+    
+    width: 200px;
+    height: 200px;
+    background-image: url(images/button/1x/active.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+.musgo:hover{
+    background-image: url(images\button\1x\Ativo.png);
+
+}
 footer{
     display: flex;
     flex-direction: row;
