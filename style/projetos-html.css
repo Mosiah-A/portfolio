@@ -69,6 +69,13 @@ main div{
     grid-column: 2;
     grid-row: 2;
 }
+main p{
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c3b3a;
+}
 .newsletter{
     grid-row: 3;
     grid-column: 1/4;
@@ -95,10 +102,24 @@ input{
     background-color: #636262;
 }
 
-input[type="email"]:has{
-    background-color: #08d427;
+button[type="submit"]{
+    background-color: #b5beb6;
+    width: 30% ;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(3, 97, 45);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    float: left;
 }
-
+button[type="submit"]:hover{ 
+    background-color: #777e78;
+    color: #333;
+    cursor: pointer;
+}
 .galeria{
     bottom:1px;
     border: 1px solid black;
@@ -130,10 +151,14 @@ input[type="email"]:has{
     flex-direction: column;
 }
 
+.box:hover{
+    width: 270px;
+    height: 320px;
+}
 .box img{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     justify-content: center;
     position: relative;
     align-items: center;
@@ -162,6 +187,7 @@ input[type="email"]:has{
 .acessar:hover{
     background-color: #777e78;
     color: #333;
+    cursor: pointer;
 }
 footer{
     display: flex;
