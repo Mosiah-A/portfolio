@@ -64,6 +64,22 @@ nav a:hover{
     
 }
 
+.contato{
+    position: absolute;
+    top: 360px;
+    left: 56px;
+    font-size: 18px;
+    width: 8rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #222E50;
+    color: #eaece7;
+    cursor: pointer;
+}
+.contato:hover{
+    background-color: #426B69;
+    font-size: 20px;
+}
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
