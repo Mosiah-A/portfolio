@@ -1,0 +1,94 @@
+:root{
+    --h1-font: 'Rubik Mono';
+    --primary-color: #109137;
+    --secondary-color: #101991;
+}
+*{
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+header{
+    font-family: var(--h1-font), sans-serif;
+    color: whitesmoke;
+    background-color: var(--primary-color);
+    height: 7vh;
+    padding: 1vw;
+    font-size: 1.5rem;
+
+}
+#woman{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 7vh;
+}
+main{
+    height: 93vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+#hero{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero div{
+    text-align: center;
+}
+#hero div h1{
+    font-size: 8rem;
+}
+#hero div span{
+    font-size: 2vw;;
+}
+#hero section{
+    text-align: center;
+    border-top: var(--secondary-color) solid 3px;
+    padding-top: 2vh;
+    margin: 2vw;
+}
+#hero button{
+    width: 20vw;
+    height: 5vh;
+    background-color: #109137;
+    font-size: 1.5vw;
+    border: none;
+}
+#hero button:hover{
+    cursor: pointer;
+    background-color: #0b702a89;
+    width: 21vw;
+    height: 5vh;
+}
+
+@media  (max-width: 855px){
+    #woman {
+        display: none;
+    }
+    #hero div h1{
+        font-size: 3rem;
+    }
+    #hero{
+        display: flex;
+        width: 80%;
+
+    }
+    #hero div span{
+        font-size: 1rem;
+    }
+    #hero button{
+        margin-top: 20px;
+        width: 40vw;
+        font-size: 1rem;
+    }
+    #hero button:hover{
+        background-color: #0b702a89;
+        width: 41vw;
+    }
+    
+}
