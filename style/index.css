@@ -7,6 +7,16 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+:root{
+    --primari-color: #B5CA8D;
+    --hover: #8BB174;
+    --background-color: #426b69;
+    --title: #222E50;
+}
+.subtitle{
+    text-align: center;
+}
+/* Header */
 
 header{
     width: 100vw;
@@ -19,19 +29,35 @@ header nav{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: #426B69;
+    background-color: var(--background-color);
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+
 }
-nav a{
-    text-decoration: none;
-    color: #B5CA8D;
+button {
+    background-color: var(--primari-color);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px black;
+    padding: 8px;
+    position: absolute;
+    right: 80px;
 }
-nav a:hover{
-    color: #8BB174;
+button:hover{
+    background-color: var(--hover);
     cursor: pointer;
 
 }
+nav a{
+    text-decoration: none;
+    color: var(--primari-color);
+}
+nav a:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+
 .social-media i{
     margin-right: 10px;
 }
@@ -42,11 +68,11 @@ nav a:hover{
 }
 .hero h1{
     font-size: 70px;
-    color: #222E50;
+    color: var(--title);
     position: absolute;
     top: 200px;
     left: 50px;
-    border-bottom: 5px solid #426B69 ;
+    border-bottom: 5px solid var(--background-color) ;
     border-radius: 10px;
 }
 .hero p{
@@ -72,14 +98,141 @@ nav a:hover{
     width: 8rem;
     border-radius: .5rem;
     border: none;
-    background-color: #222E50;
+    background-color: var(--title);
     color: #eaece7;
     cursor: pointer;
 }
 .contato:hover{
-    background-color: #426B69;
+    background-color: var(--background-color);
     font-size: 20px;
 }
+
+
+
+    /* footer */
+
+footer section{
+    align-self: baseline;
+    margin: 0 50px;
+
+}
+footer section nav div:first-child {
+    display: flex;
+    flex-direction: column;
+
+}
+footer section nav div:first-child{
+    margin-bottom: 20px;
+
+}
+footer nav a {
+    color: var(--primari-color);
+}
+
+footer nav a:hover {
+    color: var(--hover);
+}
+
+footer{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 200px;
+    font-style: italic;
+    justify-content: space-around;
+    color: var(--primari-color);
+    align-items: center;
+}
+
+
+.subtitle{
+    font-size: 3rem;
+    color: var(--title);
+    margin-top: 20px;
+}
+    /* Front-end section */
+#frontEnd{
+    box-shadow: 5px 4px 8px black;
+    width: 54vw;
+    margin: 0 80px;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #d6dad6;
+}
+#frontEnd h2{
+    color: var(--title);
+    font-size: 2rem;
+    
+}
+#frontEnd p{
+    margin: 10px 10px;
+    width: 50vw;
+}
+
+#frontEnd span{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem; 
+    color: var(--title);
+    background-color: #f8a9f8;
+}
+
+    /* Back End section */
+
+#backEnd{
+    box-shadow: 5px 4px 8px black;
+    width: 54vw;
+    margin: 80px 80px;
+    margin-left: 600px;
+    padding: 20px;
+    background-color: #d6dad6;
+}
+#backEnd h2{
+    color: var(--title);
+    font-size: 2rem;
+    
+}
+#backEnd p{
+    margin: 10px 10px;
+    width: 50vw;
+}
+
+#backEnd span{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem; 
+    color: var(--title);
+    background-color: #f8a9f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* timeline section */
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -88,7 +241,7 @@ nav a:hover{
     width: 400px;
     flex-direction: column;
     text-align: center;
-    color: #222E50;
+    color: var(--title);
 }
 .conhecimentos p{
     text-align: left;
@@ -126,7 +279,7 @@ ul img{
     width: 500px;
     flex-direction: column;
     text-align: center;
-    color: #222E50;
+    color: var(--title);
 }
 .timeline h2{
     margin-bottom: 50px;
@@ -149,14 +302,4 @@ ul img{
 }
 #falcon img{
     width: 80px;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    background-color: #8BB174;
-    width: 100vw;
-    height: 75px;
-    font-style: italic;
-    justify-content: center;
-    align-items: center;
 }
