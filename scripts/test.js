@@ -20,6 +20,13 @@ const projectjson = {
         "imagempath": "images/pojetos-thumbmail/veterinaria.png",
         "Tecnologias": ["HTML", "CSS"],
         "link": "https://mosiah-a.github.io/portfolio/projetos/veterinariaHomePage/"
+    },
+    "claro": {
+        "nome": "Pagina de captura da Claro",
+        "descrição": "Uma pagina de captura para direcionar clientes para o whatsapp",
+        "imagempath": "images/claro.png",
+        "Tecnologias": ["HTML", "CSS", "Javascript", ],
+        "link": "https://xn--conexoclaro-d8a.com.br/"
     }
 };
 
@@ -27,6 +34,7 @@ const projectjson = {
 const linkBio = document.querySelectorAll(".linkBio");
 const avengers = document.querySelectorAll(".avengers");
 const veterinaria = document.querySelectorAll(".veterinaria");
+const claro = document.querySelectorAll(".claro");
 const closeModalBtn = document.getElementById("closeModal");
 const modal = document.getElementById("projectModal");
 const content = document.getElementById("content");
@@ -68,6 +76,12 @@ avengers.forEach(Avangers => {
 veterinaria.forEach(project => {
     project.addEventListener('click', () => {
        createmodal("veterinaria")
+        
+    });
+});
+claro.forEach(project => {
+    project.addEventListener('click', () => {
+       createmodal("claro")
         
     });
 });
